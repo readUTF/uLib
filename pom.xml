@@ -21,6 +21,30 @@
         </plugins>
     </build>
 
+    <name>uLib</name>
+    <description>This is a library for plugin development</description>
+    <url>https://github.com/readUTF/uLib</url>
+
+    <licenses>
+        <license>
+            <name>MIT License</name>
+            <url>http://www.opensource.org/licenses/mit-license.php</url>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <name>UTF</name>
+            <email>readutf@gmail.com</email>
+            <organization>OxPvP</organization>
+        </developer>
+    </developers>
+
+    <scm>
+        <connection>scm:git:git://github.com/readUTF/uLib.git</connection>
+        <developerConnection>scm:git:ssh://github.com:readUTF/uLib.git</developerConnection>
+        <url>http://github.com/readUTF/uLib/tree/master</url>
+    </scm>
 
     <repositories>
         <repository>
