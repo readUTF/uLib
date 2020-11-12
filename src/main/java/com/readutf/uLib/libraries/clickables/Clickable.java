@@ -1,14 +1,10 @@
 package com.readutf.uLib.libraries.clickables;
 
-import com.readutf.uLib.libraries.EntityClick;
-import com.readutf.uLib.libraries.menu.ItemClick;
+import com.readutf.uLib.menu.EntityClick;
 import lombok.Getter;
-import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
-import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.block.Action;
-import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.inventory.ItemStack;
 
 import java.util.List;
@@ -17,7 +13,8 @@ public class Clickable implements Listener {
 
     @Getter ItemStack item;
     @Getter int type;
-    @Getter ItemClick click;
+    @Getter
+    ItemClick click;
     @Getter
     EntityClick entityClick;
     @Getter List<Action> actions;

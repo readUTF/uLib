@@ -12,8 +12,8 @@ public class CommandUtils {
         return false;
     }
 
-    public static boolean playerOnly(CommandSender sender) {
-        if(!(sender instanceof  Player)) {
+    public static boolean isPlayer(CommandSender sender) {
+        if(!(sender instanceof Player)) {
             return false;
         }
         return true;

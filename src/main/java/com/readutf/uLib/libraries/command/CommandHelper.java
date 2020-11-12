@@ -1,6 +1,6 @@
 package com.readutf.uLib.libraries.command;
 
-import com.readutf.uLib.libraries.ColorUtil;
+import com.readutf.uLib.libraries.SpigotUtils;
 import lombok.Getter;
 import org.apache.commons.lang.WordUtils;
 import org.bukkit.ChatColor;
@@ -33,7 +33,7 @@ public class CommandHelper {
             if (sub.getName().equalsIgnoreCase(args[0]) || sub.getAliases().contains(args[0])) {
                 if (sub.playerOnly) {
                     if (!(player instanceof Player)) {
-                        player.sendMessage(ColorUtil.color("&cYou must be a player to use this command."));
+                        player.sendMessage(SpigotUtils.color("&cYou must be a player to use this command."));
                         return;
                     }
                 }
@@ -42,11 +42,11 @@ public class CommandHelper {
                         sub.execute(player, command, args);
                         return;
                     } else {
-                        player.sendMessage(ColorUtil.color("&cUsage: /" + command + " " + sub.getName() +" " + sub.getUsage()));
+                        player.sendMessage(SpigotUtils.color("&cUsage: /" + command + " " + sub.getName() +" " + sub.getUsage()));
                         return;
                     }
                 } else {
-                    player.sendMessage(ColorUtil.color("&cYou do not have permission to use this command."));
+                    player.sendMessage(SpigotUtils.color("&cYou do not have permission to use this command."));
                     return;
                 }
             }
@@ -60,7 +60,7 @@ public class CommandHelper {
         sender.sendMessage(primary + ChatColor.STRIKETHROUGH.toString() + "-----------------------------------------------------");
         sender.sendMessage(primary + WordUtils.capitalize(command) + " commands");
         for (SubCommand sub : subCommands) {
-            sender.sendMessage(secondary + "/" + command + " " + sub.getName() + " " + sub.getUsage() + secondary + " - " + sub.getDescription());
+            sender.sendMessage(secondary + "/" + command + " " + sub.getName() + " " + sub.getUsage() + tertiary + " - " + sub.getDescription());
         }
         sender.sendMessage(primary + ChatColor.STRIKETHROUGH.toString() + "-----------------------------------------------------");
     }

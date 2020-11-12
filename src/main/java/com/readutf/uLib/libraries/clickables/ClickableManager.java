@@ -1,12 +1,10 @@
 package com.readutf.uLib.libraries.clickables;
 
-import com.readutf.uLib.libraries.Debuggable;
-import com.readutf.uLib.uLib;
+import com.readutf.uLib.ULib;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
-import org.bukkit.event.player.PlayerInteractAtEntityEvent;
 import org.bukkit.event.player.PlayerInteractEntityEvent;
 import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -16,7 +14,7 @@ import java.util.ConcurrentModificationException;
 import java.util.HashMap;
 import java.util.concurrent.atomic.AtomicBoolean;
 
-public class ClickableManager extends Debuggable implements Listener {
+public class ClickableManager implements Listener {
 
     JavaPlugin plugin;
     private static ClickableManager clickableManager;
@@ -83,7 +81,7 @@ public class ClickableManager extends Debuggable implements Listener {
 
         try {
 
-            uLib.verbose(this.getClass(), "1");
+            ULib.verbose(this.getClass(), "1");
             AtomicBoolean stop = new AtomicBoolean(false);
 
             clicks.forEach(clickable -> {

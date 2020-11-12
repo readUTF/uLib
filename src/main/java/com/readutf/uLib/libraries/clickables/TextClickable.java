@@ -24,7 +24,7 @@ public class TextClickable implements Listener {
     public String getCommand(Runnable runnable) {
         String key = UUID.randomUUID().toString();
         clicks.put(key, runnable);
-        return "/gewrterter " + key;
+        return "/textclickable " + key;
     }
 
     public static TextClickable get() {
@@ -33,7 +33,7 @@ public class TextClickable implements Listener {
 
     @EventHandler
     public void onChat(PlayerCommandPreprocessEvent e) {
-        if (e.getMessage().split(" ")[0].equalsIgnoreCase("/gewrterter")) {
+        if (e.getMessage().split(" ")[0].equalsIgnoreCase("/textclickable")) {
             e.setCancelled(true);
             for (String s : clicks.keySet()) {
                 if(e.getMessage().split(" ")[1].equalsIgnoreCase(s)) {

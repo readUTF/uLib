@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="jar" name="uLib:jar">
-    <output-path>$USER_HOME$/git/Practice/libs</output-path>
+    <output-path>$PROJECT_DIR$/out/artifacts/uLib_jar</output-path>
     <root id="archive" name="uLib.jar">
       <element id="module-output" name="uLib" />
       <element id="library" level="project" name="Maven: io.netty:netty-all:4.1.44.Final" />
