@@ -41,6 +41,13 @@ public class ClickableManager implements Listener {
 
         player.getInventory().setItem(slot, clickable.getItem());
     }
+    public void registerClickable(Player player, Clickable clickable, int slot) {
+        ArrayList<Clickable> clicks = clickables.getOrDefault(player, new ArrayList<>());
+        clicks.add(clickable);
+        clickables.put(player, clicks);
+    }
+
+
 
     public void clear(Player player) {
         clickables.put(player, new ArrayList<>());

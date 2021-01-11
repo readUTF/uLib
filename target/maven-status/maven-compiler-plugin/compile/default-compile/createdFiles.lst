@@ -9,7 +9,6 @@ com\readutf\uLib\aether\AetherOptions.class
 com\readutf\uLib\libraries\DocumentBuilder.class
 com\readutf\uLib\menu\button\ConfirmationButton.class
 com\readutf\uLib\menu\pagination\PageInfoButton.class
-com\readutf\uLib\menu\pagination\PageFilterButton.class
 com\readutf\uLib\libraries\Cooldown.class
 com\readutf\uLib\libraries\clickables\ItemClick.class
 com\readutf\uLib\libraries\PlayerUtil.class
@@ -22,6 +21,7 @@ com\readutf\uLib\menu\pagination\PaginatedMenu.class
 com\readutf\uLib\aether\event\BoardCreateEvent.class
 com\readutf\uLib\command\Completer.class
 com\readutf\uLib\menu\button\DisplayButton.class
+com\readutf\uLib\libraries\chatmenu\ChatMenu.class
 com\readutf\uLib\menu\Button.class
 com\minexd\zoot\util\callback\ReturnableTypeCallback.class
 com\readutf\uLib\libraries\duration\DateTimeFormats$1.class
@@ -34,13 +34,11 @@ com\readutf\uLib\libraries\BungeeUtil$2.class
 com\readutf\uLib\libraries\uPlugin.class
 com\readutf\uLib\aether\scoreboard\BoardEntry.class
 com\readutf\uLib\menu\ButtonBuilder$1.class
-com\readutf\uLib\menu\pagination\FilterablePaginatedMenu.class
 com\readutf\uLib\libraries\Pinger.class
 com\readutf\uLib\menu\pagination\templates\ConfirmMenu.class
 com\readutf\uLib\libraries\SpigotUtils.class
 com\readutf\uLib\libraries\chatmenu\ChatMenuManager.class
 com\readutf\uLib\menu\button\JumpToMenuButton.class
-com\readutf\uLib\menu\ChatMenu.class
 com\readutf\uLib\menu\pagination\PageButton.class
 com\readutf\uLib\libraries\command\CommandHelper$LANG.class
 com\readutf\uLib\aether\Aether.class

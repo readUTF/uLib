@@ -1,4 +1,4 @@
-package com.readutf.uLib.menu;
+package com.readutf.uLib.libraries.chatmenu;
 
 import lombok.AllArgsConstructor;
 import org.bukkit.entity.Player;

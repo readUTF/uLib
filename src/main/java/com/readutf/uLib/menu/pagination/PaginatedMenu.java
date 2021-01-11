@@ -12,6 +12,7 @@ import org.bukkit.entity.Player;
 public abstract class PaginatedMenu extends Menu {
 
 	HashMap<Integer, Button> customTopButtons = new HashMap<>();
+	HashMap<Integer, Button> customBottomButtons = new HashMap<>();
 
 	@Getter private int page = 1;
 
@@ -59,7 +60,6 @@ public abstract class PaginatedMenu extends Menu {
 		HashMap<Integer, Button> buttons = new HashMap<>();
 
 		for (Map.Entry<Integer, Button> entry : getAllPagesButtons(player).entrySet()) {
-			System.out.println(entry.getKey());
 			int ind = entry.getKey();
 
 			if (ind >= minIndex && ind < maxIndex) {
@@ -84,6 +84,7 @@ public abstract class PaginatedMenu extends Menu {
 				buttons.put(integer, customTopButtons.get(integer));
 			}
 		}
+
 		Map<Integer, Button> global = getGlobalButtons(player);
 
 		if (global != null) {
@@ -101,6 +102,9 @@ public abstract class PaginatedMenu extends Menu {
 
 	public void addTopItem(int slot, Button button) {
 		customTopButtons.put(slot, button);
+	}
+	public void addBottomItem(int slot, Button button) {
+		customBottomButtons.put(slot, button);
 	}
 
 	/**

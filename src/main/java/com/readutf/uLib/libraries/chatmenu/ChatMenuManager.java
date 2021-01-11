@@ -1,8 +1,9 @@
 package com.readutf.uLib.libraries.chatmenu;
 
 import com.readutf.uLib.ULib;
-import com.readutf.uLib.menu.ChatMenu;
+import com.readutf.uLib.libraries.SpigotUtils;
 import org.bukkit.Bukkit;
+import org.bukkit.Sound;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -23,7 +24,7 @@ public class ChatMenuManager implements Listener {
     }
 
     public static ChatMenuManager get() {
-        if(chatMenuManager == null) {
+        if (chatMenuManager == null) {
             return new ChatMenuManager();
         } else {
             return chatMenuManager;
@@ -40,12 +41,15 @@ public class ChatMenuManager implements Listener {
         AtomicReference<ChatMenu> chatMenu1 = new AtomicReference<>();
 
         List<ChatMenu> toRemove = new ArrayList<>();
-        for(ChatMenu chatMenu : chatMenus.keySet()) {
-            if(e.getPlayer() == chatMenus.get(chatMenu)) {
+        for (ChatMenu chatMenu : chatMenus.keySet()) {
+            if (e.getPlayer() == chatMenus.get(chatMenu)) {
                 chatMenu1.set(chatMenu);
                 e.setCancelled(true);
-                if(e.getMessage().equalsIgnoreCase("cancel")) {
+                if (e.getMessage().equalsIgnoreCase("cancel")) {
                     toRemove.add(chatMenu);
+                    e.getPlayer().sendMessage(SpigotUtils.color("&cCanceled."));
+                    e.getPlayer().playSound(e.getPlayer().getLocation(), Sound.DIG_GRASS, 20F, 0.1F);
+
                     continue;
                 }
                 chatMenu.onChat(e.getPlayer(), e.getMessage());
@@ -53,7 +57,7 @@ public class ChatMenuManager implements Listener {
         }
 
         toRemove.forEach(chatMenu -> chatMenus.remove(chatMenu));
-        if(chatMenu1.get() != null) {
+        if (chatMenu1.get() != null) {
             chatMenus.remove(chatMenu1.get());
         }
     }

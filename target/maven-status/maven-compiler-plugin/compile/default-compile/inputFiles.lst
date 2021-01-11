@@ -9,7 +9,6 @@ C:\Users\conno\Desktop\computer science\Java\uLib\src\main\java\com\readutf\uLib
 C:\Users\conno\Desktop\computer science\Java\uLib\src\main\java\com\readutf\uLib\menu\pagination\PageFilter.java
 C:\Users\conno\Desktop\computer science\Java\uLib\src\main\java\com\readutf\uLib\menu\ButtonBuilder.java
 C:\Users\conno\Desktop\computer science\Java\uLib\src\main\java\com\readutf\uLib\libraries\clickables\ItemClick.java
-C:\Users\conno\Desktop\computer science\Java\uLib\src\main\java\com\readutf\uLib\menu\pagination\PageFilterButton.java
 C:\Users\conno\Desktop\computer science\Java\uLib\src\main\java\com\readutf\uLib\aether\Aether.java
 C:\Users\conno\Desktop\computer science\Java\uLib\src\main\java\com\readutf\uLib\aether\scoreboard\cooldown\BoardCooldown.java
 C:\Users\conno\Desktop\computer science\Java\uLib\src\main\java\com\readutf\uLib\command\CommandFramework.java
@@ -27,7 +26,6 @@ C:\Users\conno\Desktop\computer science\Java\uLib\src\main\java\com\readutf\uLib
 C:\Users\conno\Desktop\computer science\Java\uLib\src\main\java\com\readutf\uLib\libraries\uPlugin.java
 C:\Users\conno\Desktop\computer science\Java\uLib\src\main\java\com\readutf\uLib\libraries\clickables\TextClickable.java
 C:\Users\conno\Desktop\computer science\Java\uLib\src\main\java\com\readutf\uLib\libraries\Pinger.java
-C:\Users\conno\Desktop\computer science\Java\uLib\src\main\java\com\readutf\uLib\menu\pagination\FilterablePaginatedMenu.java
 C:\Users\conno\Desktop\computer science\Java\uLib\src\main\java\com\readutf\uLib\libraries\command\SubCommand.java
 C:\Users\conno\Desktop\computer science\Java\uLib\src\main\java\com\readutf\uLib\menu\button\DisplayButton.java
 C:\Users\conno\Desktop\computer science\Java\uLib\src\main\java\com\readutf\uLib\aether\event\BoardCreateEvent.java
